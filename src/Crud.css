@@ -1,0 +1,83 @@
+.crud {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:beige;
+}
+
+table td {
+    width: 200px;
+    height: 30px;
+    background-color: rgb(146, 173, 199);
+    text-align: center;
+    color: white;
+}
+
+table td button {
+    padding: 5px 5px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+table td button.edit {
+    border: 1px solid green;
+    background-color: rgb(7, 168, 7);
+    color: white;
+}
+table td button.edit:hover {
+    background-color: rgb(3, 71, 3);
+}
+table td button.delete {
+    border: 1px solid red;
+    background-color: rgb(219, 19, 19);
+    color: white;
+}
+table td button.delete:hover {
+    background-color: rgb(92, 5, 5);
+}
+
+input {
+    margin-bottom: 20px;
+ 
+}
+
+
+.addForm {
+    margin-bottom: 30px;
+    border-radius: 5px;
+   
+}
+.addForm input {
+    width: 200px;
+    height: 20px;
+    font-style: normal;
+    .required:after {
+        content:" *";
+        color: red;
+      }
+}
+.addForm button {
+    width: 125px;
+    color: white;
+    height: 25px;
+    background-color: rgb(31, 171, 31);
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+.addForm button:hover {
+    background-color: rgb(5, 86, 5);
+    cursor: pointer;
+}
+
+.required{
+    color: red;
+}
+@media (max-width:800px){
+    .crud{
+        margin: 10px 0;
+    }
+    .addForm{
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
